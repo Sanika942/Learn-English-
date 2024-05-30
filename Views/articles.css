@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+  }
+  
+  header {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 30px;
+  
+    /* border: #0c0c0c solid; */
+    -webkit-background-size: cover;
+  }
+  
+  .header_right {
+    float: right;
+  }
+  
+  .divs {
+    float: right;
+  }
+  
+  .menu {
+    list-style: none;
+    margin-top: 30px;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    color: #0c0c0c;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .menu li a:hover {
+    background: #0c0c0c;
+    color: #fff;
+  }
+  
+  .logo {
+    float: left;
+    /* line-height: 60px; */
+    font-family: 'Poppins', sans-serif;
+  }
+  .logo img{
+    height: 110px;
+  }
+  
+
+
+  
+  .container {
+    padding: 30px;
+    margin-top: 96px;
+    display: flex;
+    height: auto;
+  }
+
+  .box {
+    margin: 5px;
+    padding: 20px;
+  }
+  .box h1{
+    font-size: 50px;
+  }
+  .box p{
+    font-size: 25px;
+  }
+  .box1 {
+    flex:1 ;
+  }
+  .box1 img{
+    height: 300px;
+    width: 600px;
+  }
+  .box2 {
+    flex: 2 ;
+  }
+  .types{
+    font-size: 20px;
+    padding: 30px;
+  }
+  .types ol{ 
+    margin-top: 10px;
+    font-size: 25px;  
+    padding-left: 100px;
+  }
+  .types h3{
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .types p{
+    margin-top: 10px;
+    font-size: 25px;
+  }

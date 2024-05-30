@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spelling Checker</title>
+  <script src="https://cdn.jsdelivr.net/npm/typo-js@2.1.0/dist/typo.js"></script>
+</head>
+<body>
+
+<textarea id="textInput" rows="10" cols="30" oninput="checkSpelling()"></textarea>
+<div id="spellingErrors"></div>
+
+<script>
+  // Load the English dictionary for Typo.js
+  var dictionary = new Typo("en_US");
+
+  function checkSpelling() {
+    var textInput = document.getElementById("textInput");
+    var spellingErrors = document.getElementById("spellingErrors");
+
+    // Clear previous errors
+    spellingErrors.innerHTML = "";
+
+    // Get the text content from the textarea
+    var text = textInput.value;
+
+    // Split the text into words
+    var words = text.split(/\s+/);
+
+    // Check each word for spelling errors
+    words.forEach(function (word) {
+      if (!dictionary.check(word)) {
+        // Display the misspelled word
+        var errorSpan = document.createElement("span");
+        errorSpan.textContent = word + " ";
+        errorSpan.style.color = "red";
+        spellingErrors.appendChild(errorSpan);
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

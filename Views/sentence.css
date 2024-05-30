@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("blue.jpeg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+}
+
+header {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 30px;
+
+  /* border: #0c0c0c solid; */
+  -webkit-background-size: cover;
+}
+
+.header_right {
+  float: right;
+}
+
+.divs {
+  float: right;
+}
+
+.menu {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  color: #0c0c0c;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  background: #0c0c0c;
+  color: #fff;
+}
+
+.logo {
+  float: left;
+  /* line-height: 60px; */
+  font-family: 'Poppins', sans-serif;
+}
+.logo img{
+  height: 110px;
+}
+.tut_name{
+  padding: 30px;
+  padding-top: 40px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.tut_name ol{
+  padding-left: 30px;
+}
+.row{
+  padding-left: 80px;
+}
+.col-sm-5{
+  border-top-left-radius: 50px ;
+  border-bottom-right-radius: 50px;
+  margin: 20px;
+  height: 400px;
+  color: white;
+  font-size: 20px;
+}
+.tut_name center{
+padding-top: 50px;
+}
